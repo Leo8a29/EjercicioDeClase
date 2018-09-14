@@ -3,7 +3,7 @@
 //************************************************************//
 //************** Alumno (s):  *********************************//
 //*************	Ochoa Nava Jose Leonardo				******//
-//*************	Lab. Computaciòn Gràfica Gpo:6			******//
+//*************	Lab. ComputaciÃ²n GrÃ fica Gpo:6			******//
 //************************************************************//
 #include "Main.h"
 void InitGL ( GLvoid )     // Inicializamos parametros
@@ -105,7 +105,7 @@ void display ( void )   // Creamos la funcion donde se dibuja
 
 
 											
-
+	glEnd();
 	glFlush();
 }
 
@@ -143,13 +143,13 @@ int main ( int argc, char** argv )   // Main Function
 {
   glutInit            (&argc, argv); // Inicializamos OpenGL
   glutInitDisplayMode (GLUT_RGBA | GLUT_SINGLE); // Display Mode (Clores RGB y alpha | Buffer Sencillo )
-  glutInitWindowSize  (500, 500);	// Tamaño de la Ventana
+  glutInitWindowSize  (500, 500);	// TamaÃ±o de la Ventana
   glutInitWindowPosition (0, 0);	//Posicion de la Ventana
   glutCreateWindow    ("Practica 2"); // Nombre de la Ventana
   InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut función de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut función en caso de cambio de tamano
-  glutKeyboardFunc	  (keyboard);	//Indicamos a Glut función de manejo de teclado
+  glutDisplayFunc     ( display );  //Indicamos a Glut funciÃ³n de dibujo
+  glutReshapeFunc     ( reshape );	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+  glutKeyboardFunc	  (keyboard);	//Indicamos a Glut funciÃ³n de manejo de teclado
   glutMainLoop        ( );          // 
 
   return 0;
